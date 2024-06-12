@@ -1,0 +1,12 @@
+class cadastro
+    def __init__(self, nome, número, datadenascimento, CEP): #iniciando uma classe
+        self.nome = nome
+        self.número = número
+        self.datadenascimento = data de nascimento
+        self.CEP = CEP
+        
+cadastro = []
+#criamos um loop para adicionar cadastros
+
+while true:
+    resposta = input ("deseja adicionar cadstro? (s/n): ")
