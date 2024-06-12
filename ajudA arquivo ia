@@ -1,0 +1,27 @@
+# Inicialize um vetor vazio para armazenar os cadastros
+cadastros = []
+
+# Loop para adicionar cadastros
+while True:
+    # Pergunte ao usuário se deseja adicionar um cadastro
+    resposta = input("Deseja adicionar um cadastro? (s/n): ")
+    if resposta.lower()!= '':
+        break
+
+    # Leia as informações do cadastro
+    nome = input("Digite o nome: ")
+    idade = int(input("Digite a idade: "))
+    email = input("Digite o email: ")
+
+    # Crie um dicionário para armazenar as informações do cadastro
+    cadastro = {"nome": nome, "idade": idade, "email": email}
+
+    # Adicione o cadastro ao vetor
+    cadastros.append(cadastro)
+
+    print("Cadastro adicionado com sucesso!")
+
+# Exiba os cadastros adicionados
+print("Cadastros:")
+for cadastro in cadastros:
+    print(cadastro)
